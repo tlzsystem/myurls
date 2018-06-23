@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Eliminar</h1>
+    </div>
+    <form method="post">{% csrf_token %}
+         <p>¿Está seguro que desea eliminar?</p>
+         <button type="submit" class="btn btn-primary">Eliminar</button>
+    </form>
+
+
+{% endblock %}
